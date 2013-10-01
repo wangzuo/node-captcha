@@ -7,7 +7,7 @@ module.exports = function(params){
     params.background = params.background || 'rgb(255,200,150)';
 
 	return function(req, res, next){
-		if(req.path != params.url)
+		if(req.path.search(new RegExp(params.url)) < 0)
 			return next();
 
 		var canvas = new Canvas(250, 150);
