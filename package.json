@@ -3,7 +3,7 @@
   "description": "Simple captcha middleware for Connect",
   "version": "0.0.4",
   "author": "napa3um <napa3um@gmail.com>",
-  "dependencies": { "canvas": ">= 0.9.0" },
+  "dependencies": { "canvas": ">=1.6.1" },
   "main": "./captcha.js",
   "engines": { "node": ">= 0.1.98" }
 }
